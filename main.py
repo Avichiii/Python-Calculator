@@ -31,14 +31,15 @@ class Calculator():
     
     # Main function
     def main_function(self, input_):
-        inp = int(input('Length <: '))
-        count = 0
+        if input_ in [1,3,5]:
+            inp = int(input('Length <: '))
+            count = 0
 
-        list_ = list()
-        while count < inp:
-            num = int(input('Number <: '))
-            list_.append(num)
-            count += 1
+            list_ = list()
+            while count < inp:
+                num = int(input('Number <: '))
+                list_.append(num)
+                count += 1
 
         if input_ == 1:
             result = calculator.addition(list_)
